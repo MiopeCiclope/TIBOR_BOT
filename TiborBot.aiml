@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!--Comprimentos -->
+<category>
+    <pattern>VAMOS COMECAR</pattern>
+    <template>
+        Sim, pelos comprimentos
+    </template>
+</category>
+<category>
+    <pattern>OI</pattern>
+    <template>
+        <random>
+            <li>Olá! Tudo bem.</li>
+            <li>Oi, Obrigado por conversar comigo.</li>
+            <li>A quanto tempo!</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>OK</pattern>
+    <template>
+        <random>
+            <li>Ok</li>
+            <li>Beleza, você quer algo?</li>
+            <li>OK, você não conversa muito</li>
+            <li>Tudo Bem? OK parece ser muito genérico</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>OLA</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+<category>
+    <pattern>COMO VAI</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+<!--Apresentacao-->
+<category>
+    <pattern>QUEM HE VOCE</pattern>
+    <template> Sou do futuro e vim ajudar esse perído da história.</template>
+</category>
+<category>
+    <pattern>POR QUE VOLTOU AO PASSADO</pattern>
+    <template> A raça humana está passando por um período crítico para sua evolução, e muitas linhas temporáis foram danificadas. </template>
+</category>
+<category>
+    <pattern>VOCE VAI VOLTAR A SUA EPOCA</pattern>
+    <template>Não, não existe tecnoçogia suficiente para isso.</template>
+</category>
+<!--Espanto-->
+<category>
+    <pattern>UAU</pattern>
+    <template>
+        <random>
+            <li>Não estou mentindo</li>
+            <li>Deveria acreditar</li>
+            <li>Leve a sério</li>
+            <li>Acho que não está acreditando</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>KKKK ^</pattern>
+    <template>
+        <random>
+            <li>Não ria disso, não vim aqui para brincar</li>
+            <li>Não Seja Cético</li>
+            <li>Leve na brincadeira, por enquanto</li>
+            <li><srai>UAU</srai></li>
+        </random>
+    </template>
+</category>
+    
+
+<!--Definicao Generica Futuro -->
+  <category>
+        <pattern>O QUE ACONTECE NO *</pattern>
+        <template><srai>DEFINEFUTURO <star/></srai></template>
+    </category>
+    <category>
+        <pattern>O QUE ACONTECE COM O *</pattern>
+        <template><srai>O QUE ACONTECE NO <star/></srai></template>
+    </category>
+    <category>
+        <pattern>EXPLIQUE O *</pattern>
+        <template><srai>O QUE ACONTECE NO <star/></srai></template>
+    </category>
+    
+    <category>
+        <pattern>DEFINEFUTURO FUTURO</pattern>
+        <template>
+            <random>
+                <li>Seja mais específico, o futuro é muito amplo</li>
+                <li>A tecnologia alcançou níveis inimagináveis para esse ponto no tempo.</li>
+                <li>Ao mesmo tempo que a cultura e tecnologia evoluíram, os conflitos se tornaram frequentes e mais violentos.</li>
+                <li>Talvez o mais notavél seja a cura para muitas doenças, como o cancer.</li>
+                <li>Seja mais específico, não posso relevar muito. O tecido espaço tempo é muito delicado</li>
+                <li>Em determinado período parte da humanidade deixou o planeta em busca de novas culturas interestelares.</li>
+                <li>Aguarde para ver o futuro</li>
+            </random>
+        </template>
+    </category>
+
+<!--NUM SEI-->
+<category>
+    <pattern>*</pattern>
+    <template>Não consigo dialogar com você sobre isso :( </template>
+</category>
+</aiml>
