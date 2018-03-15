@@ -2,9 +2,21 @@
 <aiml>
 <!--Comprimentos -->
 <category>
-    <pattern>VAMOS COMECAR</pattern>
+    <pattern>MEU NOME HE *</pattern>
     <template>
-        Sim, pelos comprimentos
+        Prazer em conhece-lo <set name="name"><star/></set>
+    </template>
+</category>
+<category>
+    <pattern>QUAL HE MEU NOME</pattern>
+    <template>
+        Você me disse que seu nome he <get name="name" />
+    </template>
+</category>
+<category>
+    <pattern>OBRIGADO</pattern>
+    <template>
+        Espero ter ajudado <get name="name" />
     </template>
 </category>
 <category>
@@ -64,7 +76,7 @@
     </template>
 </category>
 <category>
-    <pattern>KKKK ^</pattern>
+    <pattern>KKKK^</pattern>
     <template>
         <random>
             <li>Não ria disso, não vim aqui para brincar</li>
